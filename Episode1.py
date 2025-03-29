@@ -1,6 +1,6 @@
-a = int(input("Enter number 1 : "))
-b = int(input("Enter number 2 : "))
+#short the name 
+Name="Vivekkumar"
+nameshort=Name[0:3] #start with 0 and ends with 2 (excluding 3)
+print(nameshort)
 
-
-print("sum is : ",a+b)
-
+#o/p: Viv
