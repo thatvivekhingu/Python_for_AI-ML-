@@ -1,25 +1,14 @@
-# List in python # list is a mutable 
-l1=["vivek","yash",349.0,555]
-l1.append("Hingu")
-print(l1) # add hingu at the end of list
+#dictionary in python chpater 5 #
+#  It is mutable
+# it is a key and value pairs
+marks={"vivek":79,
+       "yash":87,
+       "Vaibhavi":88
+    }
 
-l10=[44,67,35,1,99,87]
-l10.sort()
-print(l10) #list is arrange in asending order
-l10.reverse()
-print(l10)#reverse our list is print
-l10.pop(3)
-print(l10) # 3rd number liste iteam will be pop 
-l10.insert(3,786)
-print(l10)# add number of in list at the 3rd place and entered number
-
-
-
-# Tupple in Python # tuple is immutable
-
-a=(189,25,23,"vivek","guru",23,23,23)
-print(a)
-b = a.count(23) # how many numbers are their in this list declare number of 23
-print(b)
-c = a.index(23) # which place number 23 is located
-print(c)
+print(marks.type(marks))
+print(marks["vivek"]) # define pair of element first  so they give second element of the pair 
+print(marks.items()) # tey shows that all iteam which is contains in dict in tuple form
+print(marks.keys) # show all the key
+print(marks.values) #show all the values
+print(marks.update({"vivek":99,"vaibhavi ":99,"sakshi":88})) # it is updates any values of pair and add pair in dict
