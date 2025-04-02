@@ -1,82 +1,32 @@
-'''# loops in Python 
+# practice que 1 to 3 
 
-# while loop 
-
-i=0
-while (i<5):
-    print("Pushpa raj")
-    i=i+1
-
-# list using while loop
-
-l=[1,2,3,"vivek","shubham","arcade"]
-
-i=0
-while(i<len(l)):
-    print(l[i])
-    i=i+1 # output : all listed element is print
-
-
-
-# for loops 
-
-for i in range(0,4):
-    print("Google arcade")
-
-
-# for loop with list 
-l=[1,"harry",3,"monkey"]
-for i in l:
-    print(i)
-
-# fpr loop with tuple 
-t=(786,666,"hingu","swags")
-for i in t:
-    print(i)
-
-#for loop with string 
-s="vivek"
-for i in s:
-    print(i) 
-    #o/p : 
-    # v
-    # i 
-    # v 
-    # e 
-    # k
-
-    # range functions in loop range ( start,end,step-size)
-
-    for i in range(0,10,2):
-        print(i)
-#output 
-#0
-#2
-#4
-#6
-#8
-
-
-# for loop with else 
-
-lis = ["vivek",333,678,954,"code","game",999]
-
-for i in lis:
-    print(i)
-else:
-    print("execute program with else condtion run")
-    
+# practice que 1 :Write a program to print multiplication table of a given number using for loop.
 '''
-# for loop in break
+n=int(input("enter the number :"))
 
-for i  in range(1,20):
-    print(i)
-    if i==5:
-        break # after the 5 prg is stop 
+for i in range(1,11):
+   print(f"{n}x{i}={n*i}")
+'''
 
-# for loop in continue
+# practice que 2 :  Write a program to greet all the person names stored in a list 'l' and which starts with S.
 
-for i  in range(1,10):
-    print(i)
-    if i==8:
-        continue  # 8 will skip
+'''l=["sumit","saujanya","vivek","java","sagar"]
+
+for name in l:
+    if(name.startswith("s")):
+        print(f"Hello {name}")
+'''
+
+# practice que 3 : Write a program to find whether a given number is prime or not.
+
+'''n=int(input("enter the number :"))
+
+for i in range(2,n):
+    if(n%i)==0:
+        print("This is not a prime number:",n)
+        break
+    else:
+        print("This is a prime number:",n)
+        break
+'''
+
