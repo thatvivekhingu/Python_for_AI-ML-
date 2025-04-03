@@ -1,32 +1,54 @@
-# practice que 1 to 3 
-
-# practice que 1 :Write a program to print multiplication table of a given number using for loop.
+# practice que 4 : Write a program to calculate the factorial of a given number using for loop.
 '''
-n=int(input("enter the number :"))
+n = int(input("enter the number of you want to calclute: "))
 
-for i in range(1,11):
-   print(f"{n}x{i}={n*i}")
-'''
+product=1
 
-# practice que 2 :  Write a program to greet all the person names stored in a list 'l' and which starts with S.
-
-'''l=["sumit","saujanya","vivek","java","sagar"]
-
-for name in l:
-    if(name.startswith("s")):
-        print(f"Hello {name}")
+for i in range(1,n+1):
+    product=product*i
+print(f"Factorial of {n} is : {product}")
+    
 '''
 
-# practice que 3 : Write a program to find whether a given number is prime or not.
+# practice que 5 : Write a program to print the following star pattern. for n = 3  
+#  *
+# ***
+#*****
 
 '''n=int(input("enter the number :"))
 
-for i in range(2,n):
-    if(n%i)==0:
-        print("This is not a prime number:",n)
-        break
-    else:
-        print("This is a prime number:",n)
-        break
-'''
+for i in range(1,n+1):
+    print(" "*(n-i),end="")
+    print("*"*(2*i-1), end="") # end ="" means print statement new line add nahi karta
+    print("")
+    '''
 
+# practice que 6 : Write a program to print the following star pattern. for n = 3  
+# *
+# **
+# ***
+'''
+n=int(input("enter the number :"))
+
+for i in range(1,n+1):
+  
+    print("*"*(i), end="") # end ="" means print statement new line add nahi karta
+    print("")'''
+
+
+# practice que 7 : Write a program to print the following star pattern. for n = 3  
+# * * *
+# *   *
+# * * *
+'''
+n=int(input("enter the number :"))
+
+for i in range(1,n+1):
+    if(i==1 or i==n ):
+        print("*"*(n),end="")
+    else:
+        print("*",end="")
+        print(" "*(n-2),end="")
+        print("*",end="")
+    print("")
+'''
