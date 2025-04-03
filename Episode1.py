@@ -1,54 +1,43 @@
-# practice que 4 : Write a program to calculate the factorial of a given number using for loop.
+# functions in python
+
+'''def sum():
+    a=int(input("enter number"))
+    b=int(input("enter number"))
+
+    c=a+b
+    print(c)
+
+sum()
 '''
-n = int(input("enter the number of you want to calclute: "))
+# function with arguments
 
-product=1
-
-for i in range(1,n+1):
-    product=product*i
-print(f"Factorial of {n} is : {product}")
-    
-'''
-
-# practice que 5 : Write a program to print the following star pattern. for n = 3  
-#  *
-# ***
-#*****
-
-'''n=int(input("enter the number :"))
-
-for i in range(1,n+1):
-    print(" "*(n-i),end="")
-    print("*"*(2*i-1), end="") # end ="" means print statement new line add nahi karta
-    print("")
-    '''
-
-# practice que 6 : Write a program to print the following star pattern. for n = 3  
-# *
-# **
-# ***
-'''
-n=int(input("enter the number :"))
-
-for i in range(1,n+1):
-  
-    print("*"*(i), end="") # end ="" means print statement new line add nahi karta
-    print("")'''
+def say(name):
+    print("good morning"+ " "+name)
+say("vivek")
 
 
-# practice que 7 : Write a program to print the following star pattern. for n = 3  
-# * * *
-# *   *
-# * * *
-'''
-n=int(input("enter the number :"))
+def say(name,ending):
+    print("good morning"+ " "+name +" "+ending)
+say("vivek","how do you do??")
 
-for i in range(1,n+1):
-    if(i==1 or i==n ):
-        print("*"*(n),end="")
-    else:
-        print("*",end="")
-        print(" "*(n-2),end="")
-        print("*",end="")
-    print("")
-'''
+
+# in function with return value
+
+def say():
+    print("good morning")
+    return "ok"
+a=say()
+print(a)
+# output 
+# good morning
+# ok
+
+
+
+#functions in default arguments
+
+def say(name,ending="kem chho?"):
+    print("good morning"+ " "+name+" "+ending)
+say("vivek" ,"majama" ) # o/p good morning vivek majama
+say ("vivek") # o/p good morning vivek kem chho
+
