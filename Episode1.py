@@ -1,17 +1,14 @@
-class employee:
-    langauage ="Python"
-    Salary=45,000
-  
-    def __init__(self): # In python said this method as Dunder Method
-        print("This method atomatically functions are called")
+# Inheritance in python
 
-    def nitin(self): # create the functions 
-        print(f"Nitin skill langaugae is {self.langauage} . salary is {self.Salary}")
+class Animal:
+    work="Barking"
+    name="camel"
+
+
+
+class dog(Animal):
     
+    print(f"Animal work is {Animal.work} and its type is {Animal.name}")
 
-Harry=employee()
-Harry.nitin() #call the function
-
-
-
+a=dog()
 
