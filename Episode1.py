@@ -1,14 +1,23 @@
-# Inheritance in python
+# MUltiple Inheritance in python
 
-class Animal:
-    work="Barking"
-    name="camel"
+class First:
+    name="Vivek"
+    skills="AI and ML"
+    def job(self):
+        print(f"Employee name is {self.name} and his skills in {self.skills}")
+
+class Second:
+    Language="Python"
+    Hobby="Coding"
+    def Expierence(self):
+        print(f"Language is {self.Language} and his hobby is  {self.Hobby}")
+
+class main(First,Second):
+    def CV(self):
+        print(f"Name of employee is {self.name} and its hobby is {self.Hobby}")
 
 
-
-class dog(Animal):
-    
-    print(f"Animal work is {Animal.work} and its type is {Animal.name}")
-
-a=dog()
-
+obj=main()
+obj.CV()
+obj.job()
+obj.Expierence()
