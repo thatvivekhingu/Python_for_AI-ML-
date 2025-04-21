@@ -1,19 +1,12 @@
-# match case:
-#switch case
+# exception 
 
+try:
+    a=int(input("hey, Enter thr number : "))
+    print(a)
+except Exception as e:
+    print("invalid number enter a valid number")
 
-def day(status):
-    match status:
-        case 1 : return "Monday"
-        case 2  : return "tuesday" 
-        case 3 : return "Wednesday"
-        case 4  : return "thursday" 
-        case 5 : return "friday"
-        case 6  : return "saturday" 
-        case 7 : return "sonday"
-        
-print(day(1))
-
+# agar program me input string type ki leli toh vo exception me jayega error msg show nahi hoga
 
 
         
