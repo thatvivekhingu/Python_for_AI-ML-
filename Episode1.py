@@ -1,17 +1,18 @@
-# raise in prg( agar aapka dev prg me galati  kar rha hai toh uske code ko stop kardo prg stop kardo)
+# try else in python
 
-a=int(input("enter number :"))
-b=int(input("enter second number:"))
+try:
+    a =int(input("enter thr number:"))
+    
+except ValueError as e:
+    print("this is value error")
+else:
+    print("try vala execute ho gaya toh else statement bhi execute hogaya")
 
-if(b==0):
-    raise ZeroDivisionError("zero division is not allowed")
+#output:
 
-print(f"the division of {a} and {b} is :{a/b}")
+# enter thr number:33
+# try vala execute ho gaya toh else statement bhi execute hogaya
 
-#output
-'''enter number :3
-enter second number:0
-Traceback (most recent call last):
-  File "c:\Users\Vivek Hingu\OneDrive\Desktop\moviesSeason01\Episode1.py", line 7, in <module>
-    raise ZeroDivisionError("zero division is not allowed")
-ZeroDivisionError: zero division is not allowed'''
+
+#enter thr number:mmmm
+#this is value error
