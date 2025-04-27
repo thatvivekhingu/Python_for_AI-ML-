@@ -1,18 +1,12 @@
-# try else in python
+#try except and finally
 
-try:
-    a =int(input("enter thr number:"))
-    
-except ValueError as e:
-    print("this is value error")
-else:
-    print("try vala execute ho gaya toh else statement bhi execute hogaya")
+def main():
+    try:
+        a=int(input("Enter the number :"))
+        print(a)
+    except Exception as e:
+        print("this is not valid character or number")
+    finally:
+        print("i am in finally")
 
-#output:
-
-# enter thr number:33
-# try vala execute ho gaya toh else statement bhi execute hogaya
-
-
-#enter thr number:mmmm
-#this is value error
+main()
