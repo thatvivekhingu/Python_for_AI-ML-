@@ -1,3 +1,4 @@
+
 # first install select interpreter .venv (ctrl + shift + p , create virtual environment)
 '''interminal:
 pip install speechrecognition pyaudio  (pyaudio then one space then enter)
