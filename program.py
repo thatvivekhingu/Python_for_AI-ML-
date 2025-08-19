@@ -5,6 +5,7 @@ import time
 # Wait for 3 seconds to allow user to switch to the desired screen
 time.sleep(3)
 
+
 # Step 1: Click on the icon at (983, 1054)
 pyautogui.click(1312, 1051)
 pyautogui.click(1416,920)
@@ -23,3 +24,4 @@ copied_text = pyperclip.paste()
 
 # Output the copied text
 print("Copied Text:", copied_text)
+
